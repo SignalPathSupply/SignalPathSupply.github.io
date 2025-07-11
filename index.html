@@ -3,43 +3,113 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Signal Path Supply - Coming Soon</title>
+  <title>Signal Path Supply</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0d0d0d;
+      color: #f2f2f2;
     }
     header {
+      background-color: #1a1a1a;
+      padding: 1.5em;
+      text-align: center;
+      border-bottom: 3px solid red;
+    }
+    header img {
+      max-width: 200px;
+    }
+    h1 {
+      margin: 0.5em 0;
+      font-size: 2em;
+      color: red;
+    }
+    .hero {
+      text-align: center;
+      padding: 4em 1em;
+      background: url('https://images.unsplash.com/photo-1581090700227-1e37b190418e') no-repeat center center/cover;
+      color: white;
+    }
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: auto;
+    }
+    section.contact {
+      padding: 2em;
+      background-color: #111;
+      max-width: 600px;
+      margin: 3em auto;
+      border: 1px solid #333;
+    }
+    section.contact h3 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    form label {
+      display: block;
+      margin-top: 1em;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5em;
       background: #1a1a1a;
-      color: white;
-      padding: 40px 0;
+      border: 1px solid #444;
+      color: #fff;
     }
-    main {
-      padding: 20px;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #0077cc;
+    form button {
+      margin-top: 1em;
+      background: red;
       color: white;
-      text-decoration: none;
-      border-radius: 5px;
+      padding: 0.75em 1.5em;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 2em;
+      font-size: 0.9em;
+      background: #0d0d0d;
+      color: #666;
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="A_company_logo_for_\"Signal_Path_Supply\"_is_present.png" alt="Signal Path Supply logo">
     <h1>Signal Path Supply</h1>
-    <p>Connecting You to Quality Supplies</p>
   </header>
-  <main>
-    <h2>🚧 Coming Soon 🚧</h2>
-    <p>We're working hard to launch our new site. Stay tuned!</p>
-    <a href="mailto:andrew.nelson.usaf@gmail.com" class="button">Contact Us</a>
-  </main>
+
+  <div class="hero">
+    <h2>Connecting You to Quality Tech & AV Supplies</h2>
+    <p>Supplying the signal chain of the future: fiber optics, data center gear, A/V infrastructure & more.</p>
+  </div>
+
+  <section class="contact">
+    <h3>Contact Us</h3>
+    <form action="https://formspree.io/f/your-id" method="POST">
+      <label for="name">Name</label>
+      <input type="text" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Signal Path Supply. All rights reserved.
+  </footer>
 </body>
 </html>
